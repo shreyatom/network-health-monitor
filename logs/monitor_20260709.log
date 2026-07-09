@@ -1,0 +1,59 @@
+2026-07-09 07:58:10 | INFO     | ========================================
+2026-07-09 07:58:10 | INFO     | Checking: Google DNS (8.8.8.8)
+2026-07-09 07:58:13 | INFO     | REACHABLE   | 8.8.8.8              | Latency: 3061.51 ms
+2026-07-09 07:58:15 | INFO     | LATENCY     | 8.8.8.8              | Avg: 81.29ms  Min: 51.4ms  Max: 108.66ms
+2026-07-09 07:58:15 | INFO     | PORT OPEN   | 8.8.8.8              | Port 53
+2026-07-09 07:58:15 | INFO     | PORT OPEN   | 8.8.8.8              | Port 443
+2026-07-09 07:58:15 | INFO     | ========================================
+2026-07-09 07:58:15 | INFO     | Checking: Cloudflare DNS (1.1.1.1)
+2026-07-09 07:58:15 | INFO     | REACHABLE   | 1.1.1.1              | Latency: 62.48 ms
+2026-07-09 07:58:17 | INFO     | LATENCY     | 1.1.1.1              | Avg: 56.98ms  Min: 46.52ms  Max: 75.39ms
+2026-07-09 07:58:17 | INFO     | PORT OPEN   | 1.1.1.1              | Port 53
+2026-07-09 07:58:17 | INFO     | PORT OPEN   | 1.1.1.1              | Port 443
+2026-07-09 07:58:17 | INFO     | ========================================
+2026-07-09 07:58:17 | INFO     | Checking: Google Web (142.250.192.46)
+2026-07-09 07:58:23 | WARNING  | UNREACHABLE | 142.250.192.46       | No response
+2026-07-09 07:58:26 | WARNING  | PORT CLOSED | 142.250.192.46       | Port 80
+2026-07-09 07:58:29 | WARNING  | PORT CLOSED | 142.250.192.46       | Port 443
+2026-07-09 07:58:29 | INFO     | Starting port scan on 8.8.8.8 — 2 ports
+2026-07-09 07:58:29 | INFO     | SCAN | 8.8.8.8              | Port 53     (DNS       ) | OPEN
+2026-07-09 07:58:29 | INFO     | SCAN | 8.8.8.8              | Port 443    (HTTPS     ) | OPEN
+2026-07-09 07:58:29 | INFO     | Port scan complete on 8.8.8.8
+2026-07-09 07:58:29 | INFO     | Starting port scan on 1.1.1.1 — 2 ports
+2026-07-09 07:58:29 | INFO     | SCAN | 1.1.1.1              | Port 53     (DNS       ) | OPEN
+2026-07-09 07:58:29 | INFO     | SCAN | 1.1.1.1              | Port 443    (HTTPS     ) | OPEN
+2026-07-09 07:58:29 | INFO     | Port scan complete on 1.1.1.1
+2026-07-09 07:58:29 | INFO     | Starting port scan on 142.250.192.46 — 2 ports
+2026-07-09 07:58:32 | INFO     | SCAN | 142.250.192.46       | Port 80     (HTTP      ) | CLOSED
+2026-07-09 07:58:32 | INFO     | SCAN | 142.250.192.46       | Port 443    (HTTPS     ) | CLOSED
+2026-07-09 07:58:32 | INFO     | Port scan complete on 142.250.192.46
+2026-07-09 08:06:08 | INFO     | ========================================
+2026-07-09 08:06:08 | INFO     | Checking: Google DNS (8.8.8.8)
+2026-07-09 08:06:11 | INFO     | REACHABLE   | 8.8.8.8              | Latency: 3061.82 ms
+2026-07-09 08:06:13 | INFO     | LATENCY     | 8.8.8.8              | Avg: 66.7ms  Min: 51.83ms  Max: 93.15ms
+2026-07-09 08:06:13 | INFO     | PORT OPEN   | 8.8.8.8              | Port 53
+2026-07-09 08:06:13 | INFO     | PORT OPEN   | 8.8.8.8              | Port 443
+2026-07-09 08:06:13 | INFO     | ========================================
+2026-07-09 08:06:13 | INFO     | Checking: Cloudflare DNS (1.1.1.1)
+2026-07-09 08:06:13 | INFO     | REACHABLE   | 1.1.1.1              | Latency: 53.02 ms
+2026-07-09 08:06:15 | INFO     | LATENCY     | 1.1.1.1              | Avg: 87.96ms  Min: 79.91ms  Max: 97.37ms
+2026-07-09 08:06:15 | INFO     | PORT OPEN   | 1.1.1.1              | Port 53
+2026-07-09 08:06:15 | INFO     | PORT OPEN   | 1.1.1.1              | Port 443
+2026-07-09 08:06:15 | INFO     | ========================================
+2026-07-09 08:06:15 | INFO     | Checking: Google Web (142.250.192.46)
+2026-07-09 08:06:21 | WARNING  | UNREACHABLE | 142.250.192.46       | No response
+2026-07-09 08:06:24 | WARNING  | PORT CLOSED | 142.250.192.46       | Port 80
+2026-07-09 08:06:27 | WARNING  | PORT CLOSED | 142.250.192.46       | Port 443
+2026-07-09 08:06:27 | INFO     | Starting port scan on 8.8.8.8 — 2 ports
+2026-07-09 08:06:27 | INFO     | SCAN | 8.8.8.8              | Port 53     (DNS       ) | OPEN
+2026-07-09 08:06:27 | INFO     | SCAN | 8.8.8.8              | Port 443    (HTTPS     ) | OPEN
+2026-07-09 08:06:27 | INFO     | Port scan complete on 8.8.8.8
+2026-07-09 08:06:27 | INFO     | Starting port scan on 1.1.1.1 — 2 ports
+2026-07-09 08:06:27 | INFO     | SCAN | 1.1.1.1              | Port 53     (DNS       ) | OPEN
+2026-07-09 08:06:27 | INFO     | SCAN | 1.1.1.1              | Port 443    (HTTPS     ) | OPEN
+2026-07-09 08:06:27 | INFO     | Port scan complete on 1.1.1.1
+2026-07-09 08:06:27 | INFO     | Starting port scan on 142.250.192.46 — 2 ports
+2026-07-09 08:06:30 | INFO     | SCAN | 142.250.192.46       | Port 80     (HTTP      ) | CLOSED
+2026-07-09 08:06:30 | INFO     | SCAN | 142.250.192.46       | Port 443    (HTTPS     ) | CLOSED
+2026-07-09 08:06:30 | INFO     | Port scan complete on 142.250.192.46
+2026-07-09 08:06:30 | INFO     | Report saved: reports/health_report_20260709_0806.txt
