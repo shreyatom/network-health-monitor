@@ -1,0 +1,16 @@
+# Network Monitoring & Health Check Tool
+# Requirements file
+
+# This project uses ONLY Python built-in libraries.
+# No external packages need to be installed!
+
+# Built-in libraries used:
+# socket    — TCP connectivity and port scanning
+# threading — parallel port scanning
+# logging   — timestamped log files
+# datetime  — report and log file naming
+# os        — folder creation and file paths
+# sys       — Python path configuration
+# time      — latency measurement and sleep
+
+# Python version required: 3.6+
