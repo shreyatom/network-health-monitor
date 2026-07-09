@@ -1,43 +1,92 @@
-# Network Monitoring & Health Check Tool
-### Python + Socket Programming | No External Libraries
+# network-health-monitor
 
-A Python-based network monitoring tool that checks device 
-connectivity, measures network latency, and scans TCP port 
-availability using raw socket programming.
-
----
-
-## Features
-- Connectivity check using TCP socket connection
-- Latency measurement with average over multiple attempts
-- TCP port availability scanning using threads
-- Automatic log file generation with timestamps
-- Health report saved to file after every run
+A Python tool I built to monitor network device health — checking
+connectivity, measuring latency, and scanning TCP ports using only
+Python's built-in socket module. No external libraries required.
 
 ---
 
-## Tech Stack
-| Tool            | Purpose                              |
-|-----------------|--------------------------------------|
-| Python 3.13     | Core language                        |
-| socket          | TCP connectivity and port scanning   |
-| threading       | Parallel port scanning for speed     |
-| logging         | Timestamped log file generation      |
-| datetime        | Report and log file naming           |
+## Why I Built This
 
-No external libraries needed — pure Python built-ins only!
+Manual network health checks are slow and error-prone. This tool
+automates the process — run one script and get a full report of
+which devices are up, how fast they respond, and which ports are
+open.
+
+---
+
+## What It Does
+
+- Connects to each target device using raw TCP sockets
+- Measures response latency (average of 3 attempts)
+- Scans specified TCP ports and reports open/closed status
+- Logs all activity with timestamps to a file in logs/
+- Saves a full health report to reports/ after every run
 
 ---
 
 ## Project Structure
-| File              | Purpose                              |
-|-------------------|--------------------------------------|
-| monitor.py        | Main script — runs all checks        |
-| health_check.py   | Connectivity and latency functions   |
-| port_scanner.py   | Multi-threaded TCP port scanner      |
-| logger.py         | Logging configuration                |
-| targets.py        | List of devices to monitor           |
+
+network-health-monitor/
+├── monitor.py          entry point — run this
+├── health_check.py     connectivity and latency logic
+├── port_scanner.py     threaded port scanner
+├── logger.py           logging setup
+├── targets.py          devices and ports to monitor
+├── logs/               auto-created, stores .log files
+└── reports/            auto-created, stores health reports
+
+---
+
+## How to Run
+
+Clone the repo:
+
+git clone https://github.com/shreyatom/network-health-monitor.git
+cd network-health-monitor
+
+Add your devices in targets.py:
+
+TARGETS = [
+    {
+        'name':  'Core Router',
+        'host':  '192.168.1.1',
+        'ports': [22, 80, 443],
+    },
+]
+
+Run:
+
+python monitor.py
+
+Check the reports/ folder for the full output.
 
 ---
 
 ## Sample Output
+
+HEALTH CHECK SUMMARY
+=====================================================
+Device               Status    Latency      Ports
+-----------------------------------------------------
+Google DNS           UP        66.7 ms      53:O, 443:O
+Cloudflare DNS       UP        87.9 ms      53:O, 443:O
+-----------------------------------------------------
+Result: 2/2 devices reachable
+
+---
+
+## Things I Learned Building This
+
+- How TCP sockets work at the code level using AF_INET and SOCK_STREAM
+- Why connect_ex() is better than connect() for port scanning
+- How threading speeds up port scans and why locks prevent race conditions
+- The difference between logging to file vs printing to terminal
+- How to measure network latency using time.time() in Python
+
+---
+
+## Built With
+
+Python 3.13 — standard library only
+socket, threading, logging, datetime, os, sys, time
