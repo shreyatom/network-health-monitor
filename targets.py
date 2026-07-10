@@ -1,6 +1,7 @@
-# targets.py
-# List of devices to monitor.
-# Update this file to add or remove devices.
+"""targets.py
+List of devices to monitor.
+Update this file to add or remove devices.
+"""
 
 TARGETS = [
     {
@@ -20,7 +21,7 @@ TARGETS = [
     },
 ]
 
-# Common port numbers for reference
+# common port numbers for reference
 COMMON_PORTS = {
     22:  'SSH',
     23:  'Telnet',
