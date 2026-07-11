@@ -1,0 +1,53 @@
+============================================================
+NETWORK HEALTH REPORT
+Generated: 2026-07-11 15:17:35
+============================================================
+
+CONNECTIVITY & LATENCY
+------------------------------------------------------------
+
+Device:    Google DNS (8.8.8.8)
+Status:    REACHABLE
+Latency:   47.2 ms
+Checked:   2026-07-11 15:17:18
+Ports:
+  Port 53: OPEN
+  Port 443: OPEN
+
+Device:    Cloudflare DNS (1.1.1.1)
+Status:    REACHABLE
+Latency:   41.68 ms
+Checked:   2026-07-11 15:17:20
+Ports:
+  Port 53: OPEN
+  Port 443: OPEN
+
+Device:    Google Web (142.250.192.46)
+Status:    UNREACHABLE
+Latency:   N/A
+Checked:   2026-07-11 15:17:32
+Ports:
+  Port 80: CLOSED
+  Port 443: CLOSED
+
+============================================================
+SUMMARY
+------------------------------------------------------------
+Total devices checked: 3
+Reachable:             2
+Unreachable:           1
+
+PORT SCAN RESULTS
+------------------------------------------------------------
+
+Google DNS (8.8.8.8)
+  Port 53 (DNS): OPEN
+  Port 443 (HTTPS): OPEN
+
+Cloudflare DNS (1.1.1.1)
+  Port 443 (HTTPS): OPEN
+  Port 53 (DNS): OPEN
+
+Google Web (142.250.192.46)
+  Port 443 (HTTPS): CLOSED
+  Port 80 (HTTP): CLOSED
