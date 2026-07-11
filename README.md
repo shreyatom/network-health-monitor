@@ -27,6 +27,7 @@ open.
 
 ## Project Structure
 
+```
 network-health-monitor/
 ├── monitor.py          entry point — run this
 ├── health_check.py     connectivity and latency logic
@@ -35,6 +36,7 @@ network-health-monitor/
 ├── targets.py          devices and ports to monitor
 ├── logs/               auto-created, stores .log files
 └── reports/            auto-created, stores health reports
+```
 
 ---
 
@@ -65,6 +67,7 @@ Check the reports/ folder for the full output.
 
 ## Sample Output
 
+```
 HEALTH CHECK SUMMARY
 =====================================================
 Device               Status    Latency      Ports
@@ -73,6 +76,7 @@ Google DNS           UP        66.7 ms      53:O, 443:O
 Cloudflare DNS       UP        87.9 ms      53:O, 443:O
 -----------------------------------------------------
 Result: 2/2 devices reachable
+```
 
 ---
 
